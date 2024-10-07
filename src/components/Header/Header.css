@@ -1,0 +1,25 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    padding: 2rem;
+    padding-top: 1.5rem;
+}
+.header-menu{
+    list-style: none;
+    display: flex;
+    color: white;
+    gap: 2rem;
+    padding: 2rem;
+    padding-top: 2rem;
+    cursor: pointer;
+    :hover{
+        color: rgb(100, 167, 248);
+    }
+
+}
+.signup{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
