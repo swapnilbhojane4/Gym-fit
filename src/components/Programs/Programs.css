@@ -1,0 +1,48 @@
+.Programs{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+}
+.programs-header{
+    display: flex;
+    gap: 2rem;
+    font-weight: bold;
+    font-size: 3rem;
+    justify-content: center;
+    color: aliceblue;
+    text-transform: uppercase;
+    font-style: italic;
+}
+.program-categories{
+    display: flex;
+    gap: 1rem;
+}
+.category{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(55, 72, 99);
+    padding: 2rem;
+    gap: 1rem;
+    color: white;
+    justify-content: space-between;
+    border-radius: 20px;
+
+}
+.category:hover{
+   background:scroll;
+    cursor: pointer;
+}
+.category>:nth-child(1){
+    width: 2rem;    
+    height: 2rem;fill: white;
+}
+.category>:nth-child(2){
+    font-size: 1rem;
+   font-weight: bold;
+}
+.join-now{
+    display: flex;
+    align-items: center;gap: 2rem;
+    font-size: 1.2rem;
+}
