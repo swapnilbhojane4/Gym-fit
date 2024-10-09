@@ -1,9 +1,19 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import './Programs.css'
 import { programsData } from '../../utils/programsData'
 import RightArrow from '../../assets/rightArrow.png';
 
 const Programs = () => {
+    const navigate = useNavigate();
+
+    const handleJoinNowClick = (program) => {
+        if (program.heading === 'Strength Training') {
+            navigate("/generator"); 
+        } else {
+            navigate('/other-program');
+        }
+    };
     return (
         <div className='Programs' id="programs">
             <div className='programs-header'>
@@ -17,7 +27,7 @@ const Programs = () => {
                         {program.image}
                         <span>{program.heading}</span>
                         <span>{program.details}</span>
-                        <div className='join-now'>
+                        <div className='join-now' onClick={() => handleJoinNowClick(program)}>
                             <span>Join Now</span>
                             <img src={RightArrow}/>
                         </div>
