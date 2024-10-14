@@ -14,17 +14,17 @@ function App() {
         <BrowserRouter>
           <Hero />
           <Programs />
-          <Plans />
           <Routes>
             <Route
               path="/generator"
               element={<Generator />}
             />
-            {/* <Route
+            <Route
               path="/workout"
               Component={Workout}
-            /> */}
+            />
           </Routes>
+          <Plans />
         </BrowserRouter>
       </main>
     </>

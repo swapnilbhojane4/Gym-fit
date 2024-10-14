@@ -9,7 +9,7 @@ const Programs = () => {
 
     const handleJoinNowClick = (program) => {
         if (program.heading === 'Strength Training') {
-            navigate('/generator');  
+            navigate("/generator");  
         } else {
             navigate('/other-program');
         }
